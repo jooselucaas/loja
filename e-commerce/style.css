@@ -1,0 +1,205 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+    border: 2px solid rgb(159, 212, 255);
+    border-radius: 50px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e5533f;
+}
+
+/* Sacola e contador */
+.bag-container {
+  position: relative;
+}
+
+.bag-icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.bag-icon:hover {
+  color: #ff6347;
+}
+
+.bag-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu de navegação abaixo */
+.nav {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    padding: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav a:hover {
+    color: #ff6347;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 1024px) {
+    .header-container {
+        padding: 10px 15px;
+    }
+
+    .nav ul {
+        gap: 30px;
+    }
+
+    .logo-image {
+        height: 40px;
+    }
+
+    .search-bar input {
+        padding: 8px 10px;
+    }
+
+    .bag-icon {
+        font-size: 18px;
+    }
+}
+
+/* Responsividade para dispositivos móveis (telas menores que 768px) */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-image {
+        height: 40px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav ul {
+        display: none; /* Esconde os itens de navegação */
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav li {
+        padding: 5px 0;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+/* Mostrar o menu quando o ícone for clicado */
+.nav.show {
+    display: flex !important;
+}
