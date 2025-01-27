@@ -1,42 +1,195 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja</title>
+  <title>Minha Loja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="header-container">
-      <a href="#" class="logo">
-        <img src="images/ZOT STORE.png" alt="Minha Loja" class="logo-image">
-      </a>
-      <div class="header-actions">
-        <div class="search-bar">
-          <input type="text" placeholder="Buscar produtos...">
-          <button>🔍</button>
-        </div>
-        <div class="bag-container">
-          <a href="#" class="bag-icon">
-            <i class="fas fa-shopping-bag"></i>
-          </a>
-          <div class="bag-count">3</div>
-        </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i> TikTok</a>
+      </div>
+      <div class="frete">
+        <p>Frete grátis apenas para São Paulo</p>
       </div>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#"><i class="fas fa-clock"></i> Relógio</a></li>
-        <li><a href="#"><i class="fas fa-tv"></i> Eletrônicos</a></li>
-        <li><a href="#"><i class="fas fa-tshirt"></i> Camisas</a></li>
-        <li><a href="#"><i class="fas fa-ellipsis-h"></i> Mais</a></li>
-      </ul>
+  </footer>
+
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/ZOT STORE.png" alt="Logo da Loja"></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquise aqui">
+          <button>Buscar</button>
+        </div>
+        <div class="icons desktop-menu">
+          <a href="#" class="link">Cadastre-se</a>
+          <a href="#" class="link">Entrar</a>
+          <a href="#" class="icon"><i class="fas fa-bell"></i></a>
+          <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- Botão de Menu Mobile -->
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu">
+      <a href="#" class="link">Cadastre-se</a>
+      <a href="#" class="link">Entrar</a>
+      <a href="#" class="icon"><i class="fas fa-bell"></i></a>
+      <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
     </nav>
   </header>
-  
 
+  <section class="hero-section">
+    <div class="slider-container">
+      <div class="slider">
+        <img src="https://http2.mlstatic.com/D_NQ_731293-MLA81982596929_012025-OO.webp" alt="Imagem 1">
+        <img src="https://cf.shopee.com.br/file/br-11134258-7r98o-m593ifxy0380c9_xxhdpi" alt="Imagem 2">
+        <img src="https://cf.shopee.com.br/file/br-11134258-7r98o-m53bk4b9s6uq5a_xxhdpi" alt="Imagem 3">
+        <img src="https://cf.shopee.com.br/file/br-11134258-7r98o-m53d6isj24i84c_xxhdpi" alt="Imagem 4">
+      </div>
+    </div>
+    <div class="side-images">
+      <img src="https://cf.shopee.com.br/file/br-50009109-f2e0271b220251fbb42ab8d1de067dc1_xhdpi" alt="Promoção 1" class="top-image">
+      <img src="https://cf.shopee.com.br/file/br-50009109-ec5cfeb670bba21c665499a2351ac580_xhdpi" alt="Promoção 2" class="bottom-image">
+    </div>
+  </section>
+
+  <section class="icon-section">
+    <div class="icon-container">
+      <div class="icon-item">
+        <i class="fas fa-coins"></i>
+        <p>Moedas</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-trophy"></i>
+        <p>Prêmios</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-truck"></i>
+        <p>Frete Grátis</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-tags"></i>
+        <p>Cupons</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-store"></i>
+        <p>Lojas Oficiais</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-video"></i>
+        <p>Lives</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-hand-holding-heart"></i>
+        <p>Doações</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-home"></i>
+        <p>Casa Shopee</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-laptop"></i>
+        <p>Tecnologia</p>
+      </div>
+      <div class="icon-item">
+        <i class="fas fa-tshirt"></i>
+        <p>Moda</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-section">
+    <h2 class="categories-title">Categorias</h2>
+    <div class="categories-container">
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2016/10/05/17/17/smartphone-1717177_640.png" alt="Categoria 1">
+        <p>Eletrônicos</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2022/04/06/10/12/shoes-7115251_640.png" alt="Categoria 2">
+        <p>Moda</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2022/06/25/01/46/woman-7282714_640.png" alt="Categoria 3">
+        <p>Beleza</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2020/12/25/10/34/football-5859044_640.png" alt="Categoria 4">
+        <p>Esportes</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2015/12/28/02/58/home-1110868_640.png" alt="Categoria 5">
+        <p>Casa</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2023/11/27/15/41/cat-8415620_640.jpg" alt="Categoria 6">
+        <p>Livros</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2021/02/03/12/27/clock-5977783_640.png" alt="Categoria 7">
+        <p>Brinquedos</p>
+      </div>
+      <div class="category-item">
+        <img src="https://cdn.pixabay.com/photo/2022/01/08/13/40/car-6924011_640.png" alt="Categoria 8">
+        <p>Automóveis</p>
+      </div>
+    </div>
+  </section>  
+
+  <section class="section-destaques">
+    <h2>Destaques para Você</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left-btn">&#8249;</button>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="https://down-br.img.susercontent.com/file/a1e2bcd790a4bccf997fa6111a5f5d85" alt="Produto 1">
+          <p>Produto 1</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://down-br.img.susercontent.com/file/94e0d2110d8acfe1394937409576cd00" alt="Produto 2">
+          <p>Produto 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://down-br.img.susercontent.com/file/063197f9a512f01c446790bd0fe26a8d" alt="Produto 3">
+          <p>Produto 3</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://down-br.img.susercontent.com/file/367753814b067e6c6ed6e673f5e746b1" alt="Produto 4">
+          <p>Produto 4</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://down-br.img.susercontent.com/file/829cd4c75f14b1a860a25add826bda12" alt="Produto 5">
+          <p>Produto 5</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://down-br.img.susercontent.com/file/af4c20a87941394d4aef4951a83a4395" alt="Produto 6">
+          <p>Produto 6</p>
+        </div>
+      </div>
+      <button class="carousel-btn right-btn">&#8250;</button>
+    </div>
+  </section>
+  
+  
+  
+  
   <script src="script.js"></script>
 </body>
 </html>
+
+
